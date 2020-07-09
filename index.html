@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Akhila's Blog</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .container{
+                border: 8px solid black;
+                border-style: double;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                
+            }
+            figcaption{
+                font-family: 'Arvo', serif;
+                text-align: center;
+                font-size: 2.5vw;
+                margin-top: 10px;
+            }
+            #intro{
+                margin-left: 30px;
+                font-size: 2vw;
+                font-family: 'Arvo', serif;
+            }
+            #titles{
+                margin-top: 30px;
+                margin-left: 30px;
+                font-family: 'Cinzel', serif;
+            }
+            .navbar{
+                margin-left: 30px;
+                margin-right: 30px;
+                font-family: 'Cinzel', serif;
+            }
+            .row {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+img {
+  border: 5px solid black;
+  border-style:double;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    }
+   
+
+    </style>
+    <script>
+                $(document).ready(function(){
+                    $("#pics").hide();
+                    $("#photo").click(function(){
+                        $("#draws").hide();
+                        $("#pics").show();
+
+                    });
+                    $("#draw").click(function(){
+                        $("#draws").show();
+                        $("#pics").hide();
+                    });
+                });
+    </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="titles" style="font-size:6vw;">INSIDE<br> My SketchBook</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" id="draw">Drawings<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="photo">Photos</a>
+                    </li>
+                   <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>-->
+                  
+                  </ul>
+                 
+                </div>
+              </nav>
+              <br>
+            <p id="intro">Hi!!<br>I am Akhila<br>Here are some of my sketches and Photos.Lets,have a look...</p>
+                <div class="row" id="draws"> 
+                    <div class="column">
+                        <figure>
+                      <img src="drawing\tomc.jpg" style="width:100%">
+                      <figcaption>Favourite Cartoon</figcaption>
+                      <hr>
+                    </figure>
+                      <img src="drawing\chai.jpg" style="width:100%">
+                      <img src="drawing\city.jpg" style="width:100%">
+                      <img src="drawing\bee.jpg" style="width:100%">
+                      <img src="drawing\food.jpg" style="width:100%">
+                      <img src="drawing\alive.jpg" style="width:100%">
+                      <img src="drawing\coffee.jpg" style="width:100%">
+                      <img src="drawing\emoji.jpg" style="width:100%">
+                      <img src="drawing\ride.jpg" style="width:100%">
+                      <img src="drawing\squirrel.jpg" style="width:100%">
+                      <img src="drawing\tour.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img src="drawing\fub.jpg" style="width:100%">
+                      <img src="drawing\life.png" style="width:100%">
+                      <img src="drawing\lion.jpg" style="width:100%">
+                      <img src="drawing\story.jpg" style="width:100%">
+                      <img src="drawing\minion.jpg" style="width:100%">
+                      <img src="drawing\path.jpg" style="width:100%">
+                      <img src="drawing\cycle.jpg" style="width:100%">
+                      <img src="drawing\movie.jpg" style="width:100%">
+                      <img src="drawing\scooby.jpg" style="width:100%">
+                      <img src="drawing\thread.jpg" style="width:100%">
+                    </div>  
+                    
+                </div>
+                <div class="row" id="pics"> 
+                    <div class="column">
+                    <figure>
+                      <img src="drawing\1.jpg" style="width:100%">
+                      <figcaption>Rise of Moon</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="drawing\2.jpg" style="width:100%">
+                      <figcaption>Sunset</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="drawing\amigos.jpg" style="width:100%">
+                        <figcaption>My Birthday #20th</figcaption>
+                      </figure>
+                    </div>
+                    <div class="column">
+                    <figure>
+                      <img src="drawing\3.jpg" style="width:100%">
+                      <figcaption>Beautiful Sky</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="drawing\divya.jpg" style="width:100%">
+                        <figcaption>Best Picture of 2020</figcaption>
+                      </figure>
+
+                    </div>  
+                    
+                </div>
+                  
+        </div>
+    </body>
+</html>
